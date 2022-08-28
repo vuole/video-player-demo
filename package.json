@@ -1,14 +1,32 @@
 {
-  
   "author": "Pavan",
   "name": "pavk-video-player",
   "version": "1.0.0",
   "description": "a local video player",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-forge"
+  },
+  "build": {
+    "icon": "video.png",
+    "appId": "com.pavk.videoplayer",
+    "linux": {
+      "target": "deb"
+    },
+    "win": {
+      "publish": [
+        "bitbucket"
+      ]
+    }
   },
   "devDependencies": {
     "electron": "^20.1.0"
+  },
+  "config": {
+    "repository": {
+      "owner": "pavkcode",
+      "name": "video-player@1.0.0"
+    }
   }
 }
