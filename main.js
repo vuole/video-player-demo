@@ -12,9 +12,9 @@ function createWindow() {
         },
 
         icon: __dirname + '/video.png',
-        title: 'Pav-K Video Player',
+        title: 'Video Player',
     });
-    win.setTitle('Video-Player');
+    win.setTitle('Video Player');
     win.loadFile(path.join(__dirname, 'src', 'index.html'));
     win.setMenuBarVisibility(false)
 }

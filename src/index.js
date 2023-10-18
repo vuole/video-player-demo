@@ -2,11 +2,11 @@ const { ipcRenderer } = require('electron');
 var uploadFile = document.getElementById('upload');
 var aboutclick = document.getElementById('about');
 aboutclick.addEventListener('click', () => {
-  alert("App: Pav-K Video Player\nA video player made by Pavan using ElectronJs.\nVersion: 1.0.0")
+  alert("App: Video Player\nVersion: 1.0.0")
 });
 var gitclick = document.getElementById('github');
 gitclick.addEventListener('click', () => {
-  alert("Visit https://pavkcode.bitbucket.io")
+  alert("Visit https://github.com/")
 
 });
 uploadFile.addEventListener('click', () => {
