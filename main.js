@@ -16,7 +16,7 @@ function createWindow() {
     });
     win.setTitle('Video Player');
     win.loadFile(path.join(__dirname, 'src', 'index.html'));
-    win.setMenuBarVisibility(false)
+    win.setMenuBarVisibility(true)
 }
 ipcMain.on('file-request', (event) => {
         dialog.showOpenDialog({
